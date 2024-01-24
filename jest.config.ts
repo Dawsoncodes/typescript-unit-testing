@@ -2,9 +2,9 @@ import type { Config } from "jest"
 
 const config: Config = {
   verbose: true,
-  transform: {
-    "^.+\\.(ts|tsx)$": "ts-jest",
-  },
+  preset: "ts-jest",
+  roots: ["<rootDir>/tests"],
+  rootDir: "./",
 }
 
 export default config
